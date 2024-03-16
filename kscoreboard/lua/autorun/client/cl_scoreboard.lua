@@ -113,7 +113,7 @@ local function Scoreboard()
 
     function frame:Paint(w, h)
         draw.RoundedBox(0, 0, 0, w, h, Color(0, 0, 0, 200))
-        draw.SimpleText(playerCount.. " / " ..maxPlayers, "DefaultScoreboard", ScrW() * 0.73, ScrH() * 0.04, Color(255, 255, 255, 255))
+        draw.SimpleText("Max Players: " ..maxPlayers, "DefaultScoreboard", ScrW() * 0.73, ScrH() * 0.04, Color(255, 255, 255, 255))
         draw.SimpleText(os.date("%H:%M"), "DefaultScoreboard", ScrW() * 0.73, ScrH() * 0.085, Color(255, 255, 255, 255))
     end
 end
